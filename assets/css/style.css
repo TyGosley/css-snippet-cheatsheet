@@ -1,5 +1,10 @@
 :root{
     /* CSS VARIABLES */
+    --outer-space: #33393f;
+    --bright-turqouise: #2aefcb;
+    --gin: #e0eae4;
+    --heliotrope: #e866ec;
+
 }
 
 html {
@@ -11,13 +16,16 @@ body {
 
     font-size: 1.75rem;
     line-height: 1.5;
-    /* color: TODO; */
-    /* background-color: TODO; */
+    color: var(--gin);
+    background-color: var(--outer-space);
 }
 
 
 h1, h2, h3, h4, h5, h6 {
     margin-bottom: 0.625rem;
+    color: var(--heliotrope);
+    font-weight: 700;
+    line-height: 1.1;
 }
 
 h1 {
@@ -52,3 +60,25 @@ code {
     font-family: monospace;
 }
 
+header {
+    width: 96%;
+    margin: 0 auto;
+    padding: 2.5rem;
+    text-align: center;
+}
+
+header h1.page-title {
+    padding: 1rem 1.2rem;
+    font-size: 4.5rem;
+}
+
+main {
+    width: 96%;
+    margin: 2rem auto;
+
+}
+
+footer {
+    margin: 1.5rem;
+    text-align: center;
+}
