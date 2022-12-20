@@ -82,3 +82,60 @@ footer {
     margin: 1.5rem;
     text-align: center;
 }
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.card-column {
+    /* flex grow, flex shrink, flex basis  */
+    flex: 1 0 100%
+    padding: 1.5rem;
+    /* TODO: transition  */
+    margin-bottom: 1.5rem;
+}
+
+.code-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 100%;
+    padding: 2rem;
+    color: var(--heliotrope);
+
+    outline: 2px dashed var(--gin);
+    outline-offset: -2px;
+    /* TODO: transition  */
+}
+
+.code-card .card-header {
+    position: relative;
+    margin: -4rem 0 1.5rem 0;
+    border: 2px solid var(--gin);
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    background-color: var(--outer-space);
+    color: var(--heliotrope);
+    /* TODO: transition  */
+}
+
+.code-card .code-block {
+    border: 2px solid gold;
+    flex-grow: 1;
+}
+
+.code-card pre {
+    color: var(--gin);
+    background-image: linear-gradient(
+        rgba(232, 102, 236, 0.3) 0%, 
+        rgba(232, 102, 236, 0.6) 100%
+    );
+}
