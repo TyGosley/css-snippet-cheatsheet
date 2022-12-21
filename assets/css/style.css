@@ -133,9 +133,37 @@ footer {
 }
 
 .code-card pre {
+    white-space: pre-wrap;
+    overflow: auto;
+    tab-size: 4;
+    padding: 1.2rem 1rem;
+    display: flex;
+    align-items: center;
     color: var(--gin);
     background-image: linear-gradient(
         rgba(232, 102, 236, 0.3) 0%, 
         rgba(232, 102, 236, 0.6) 100%
     );
+}
+
+@media screen and (min-width: 768px) {
+    .card-column {
+        flex: 0 0 50%;
+        max-width: 100%;
+    }
+
+    .card-column:last-child {
+        flex-grow: 1;
+    }
+}
+
+@media screen and (mid-width:992px) {
+    header {
+        width: 75%;
+    }
+    
+    .card-column {
+        flex: 0 0 33.333%;
+        max-width: 33.333%;
+    }
 }
