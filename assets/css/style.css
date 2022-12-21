@@ -4,7 +4,11 @@
     --bright-turqouise: #2aefcb;
     --gin: #e0eae4;
     --heliotrope: #e866ec;
+}
 
+::selection {
+    background: var(--bright-turqouise);
+    color: var(--outer-space);
 }
 
 html {
@@ -100,6 +104,7 @@ footer {
     flex: 1 0 100%
     padding: 1.5rem;
     /* TODO: transition  */
+    transition: flex-basis 500ms linear;
     margin-bottom: 1.5rem;
 }
 
@@ -144,6 +149,10 @@ footer {
         rgba(232, 102, 236, 0.3) 0%, 
         rgba(232, 102, 236, 0.6) 100%
     );
+}
+
+.code-card pre:active {
+    user-select: all;
 }
 
 @media screen and (min-width: 768px) {
