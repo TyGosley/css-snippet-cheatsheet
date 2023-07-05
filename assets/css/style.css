@@ -103,7 +103,6 @@ footer {
     /* flex grow, flex shrink, flex basis  */
     flex: 1 0 100%
     padding: 1.5rem;
-    /* TODO: transition  */
     transition: flex-basis 500ms linear;
     margin-bottom: 1.5rem;
 }
@@ -118,7 +117,6 @@ footer {
 
     outline: 2px dashed var(--gin);
     outline-offset: -2px;
-    /* TODO: transition  */
     transition: all 500ms ease-in-out;
 }
 
@@ -130,7 +128,6 @@ footer {
     padding: 0.5rem 1rem;
     background-color: var(--outer-space);
     color: var(--heliotrope);
-    /* TODO: transition  */
     transition: all 500ms ease-in-out;
 }
 
